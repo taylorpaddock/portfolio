@@ -1,0 +1,107 @@
+:root {
+    --green: rgb(87, 160, 132);
+    --white: white;
+    --blue: powderblue;
+    --pink: pink;
+}
+
+body {
+    background-color: var(--pink);
+    display: inline;
+    width: 80%;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+p {
+    color: var(--white);
+    padding: 20px;
+    display: inline-block;
+}
+
+.header {
+    padding: 25px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.header h1 {
+    display: inline-block;
+}
+
+.header h1 .portfolio {
+    color: var(--green);
+}
+
+.header nav {
+    display: inline;
+    list-style-type: none;
+    margin-right: 30px;
+    padding: 10px 0;
+    float: right;
+    font-size: 22px;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main {
+    background-image: url("../images/ocean-waves.jpg");
+    height: 400px;
+    width: 100%;
+}
+
+.main {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.welcome {
+    position: absolute;
+    height: 40px;
+    padding: 10px;
+    bottom: 25px;
+    right: -20px;
+    margin-right: 50px;
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.section {
+    display: inline-block;
+    margin: 20px 50px;
+    padding: 10px;
+    background-color: var(--green);
+    text-align: left;
+    border: 10px solid var(--blue);
+}
+
+.headers {
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+    margin: 10px 20px;
+    border: dotted var(--white);
+    border-width: 3px 0;
+    float: left;
+}
+
+
