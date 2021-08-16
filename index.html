@@ -7,39 +7,31 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Taylor's Portfolio</title>
 </head>
-<body>
+
+<body >
   
   <!-- Header -->
-  <header>
-    <div class="header">
+  <header class="main-header">
         <h1>Taylor's<span class="portfolio"> Portfolio</span></h1>
         <!-- Navigation -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me"><strong>About Me</strong></a>
-                </li>
-                <li>
-                    <a href="#work"><strong>Work</strong></a>
-                </li>
-                <li>
-                    <a href="#contact-me"><strong>Contact Me</strong></a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="navigation">
+          <li><a href="#about-me"><strong>About Me</strong></a></li>
+          <li><a href="#work"><strong>Work</strong></a></li>
+          <li><a href="#contact-me"><strong>Contact Me</strong></a></li>
+        </ul>
     </div>
   </header>
 
   <!-- Welcome Section -->
-  <section>
-    <div class="main" role="image" aria-label="ocean waves">
+  <main>
+    <div role="image" aria-label="ocean waves">
         <h2 class="welcome">Welcome.</h2>
     </div>
-  </section>
-
+  </main>
+  
   <!-- About Me Section -->
-  <section class="section">
-    <div id="about-me">
+  <section class="section" id="about-me">
+    <div>
       <h2 id="title">About Me</h2>
       <p>My name is Taylor Paddock and I am constantly growing my skills to become a developer. I currently work for glassybaby and over the past 7 years I have moved 
           into many different positions and departments in order to gain knowledge of every part of the business. I started as a quality control associate and worked my way
@@ -48,36 +40,34 @@
           <br>
           <br>
           I am now taking courses through University of Washington to further my knowlege of HTML, CSS and JavaScript, so I can become the best devolper I possibly can be.</p>
-    </div>
-  </section>
-
-  <!-- Work Section -->  
-  <section class="section" id="work"> 
-    <h2 id="title">Work</h2>
-      <div class="work">
-        <section class="card">
-          <header>Code Refractor</header>
-          <img src="./assets/images/sky.jpg" alt="cloudy sky" />
-        </section>
-        <section class="card">
-          <header>Project 2</header>
-          <img src="./assets/images/ocean-wave-2.jpg" alt="big ocean wave" />
-        </section>
-        <section class="card">
-          <header>Project 3</header>
-          <img
-            src="./assets/images/rock-beach.jpg" alt="a rocky beach" />
-        </section>
-        <section class="card">
-          <header>Project 4</header>
-          <img
-            src="./assets/images/ocean-sunset.jpg" alt="sunset over the ocean"/>
-        </section>
       </div>
-  </section> 
-
-
-  <section class="section">
+    <!-- Work Section -->
+    <div id="work">
+      <h2 id="title" >Work</h2>
+      <div class="projects">
+        <a href="https://github.com/taylorpaddock/coderefractor-week1" target="_blank" >
+          <section class="card-one" role="image" aria-label="cloudy sky">
+            <p>Code Refractor</p>
+          </section>
+        </a>
+        <a href="https://github.com/taylorpaddock" target="_blank" >
+          <section class="card-two" role="image" aria-label="starry sky">
+            <p>Project One</p>
+          </section>
+        </a>
+        <a href="https://github.com/taylorpaddock" target="_blank" >
+          <section class="card-three" role="image" aria-label="ocean wave">
+            <p>Project Two</p>
+          </section>
+        </a>
+        <a href="https://github.com/taylorpaddock" target="_blank" >
+          <section class="card-four" role="image" aria-label="sunset">
+            <p>Project Three</p>
+          </section>
+        </a>
+      </div>
+    </div>
+    <!-- Contact Me Section-->
     <div id="contact-me">
       <h2 id="title">Contact Me</h2>
       <ul>
@@ -90,17 +80,8 @@
   </section>
   
   <footer>
-    <div>
-        <h3>Created with Hard Work and Love</h3>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                
-            </ul>
-        </nav>
-    </div>
+    <h3>Created with Hard Work and Love</h3>
   </footer>
 
-    
 </body>
 </html>
