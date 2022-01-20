@@ -4,94 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Taylor's Portfolio</title>
 </head>
 
-<body >
-  
+<body class="light-green">
   <!-- Header -->
-  <header class="main-header">
-        <h1>Taylor's<span class="portfolio"> Portfolio</span></h1>
-        <!-- Navigation -->
-        <ul class="navigation">
-          <li><a href="#about-me"><strong>About Me</strong></a></li>
-          <li><a href="#work"><strong>Work</strong></a></li>
-          <li><a href="#contact-me"><strong>Contact Me</strong></a></li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Taylor's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link green" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link green" href="#contact-me">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link green" href="#work">Work</a>
+        </li>
+      </ul>
     </div>
-  </header>
-
+  </nav>
   <!-- Welcome Section -->
-  <main>
-    <div role="image" aria-label="ocean waves">
-        <h2 class="welcome">Welcome.</h2>
+  <div class="jumbotron jumbotron-fluid light-pink">
+    <div class="container">
+      <h1 class="display-4 text-right green">Welcome.</h1>
     </div>
-  </main>
-  
+  </div>
   <!-- About Me Section -->
-  <section class="section" id="about-me">
-    <div>
-      <h2 id="title">About Me</h2>
-      <p>My name is Taylor Paddock and I am constantly growing my skills to become a developer. I currently work for glassybaby and over the past 7 years I have moved 
+  <div class="col-11 m-3" id="about-me">
+    <h2 class="m-2" id="title">About Me</h2>
+    <p class="m-4">My name is Taylor Paddock and I am constantly growing my skills to become a developer. I currently work for glassybaby and over the past 7 years I have moved 
           into many different positions and departments in order to gain knowledge of every part of the business. I started as a quality control associate and worked my way
           up into a customer service manager and then project coordinator for marketing. Next, I became a project manager of operations and now I have gotten the opportunity to be the e-commerce web manager
           due to my self starter work ethic and do it yourself attitude.
           <br>
           <br>
           I am now taking courses through University of Washington to further my knowlege of HTML, CSS and JavaScript, so I can become the best devolper I possibly can be.</p>
-      </div>
+  </div>
+      <!-- Contact Me Section-->
+  <div class="row m-3" id="contact-me">
+    <h2 class="col-12 m-2" id="title">Contact Me</h2>
+    <a href="mailto:tayjeep@comcast.net" class="btn btn-outline-success btn-lg active col-md-auto m-2" target="_blank" role="button" aria-pressed="true">Email Me</a>
+    <a href="tel:2069092221" class="btn btn-outline-info btn-lg active col-md-auto m-2" target="_blank" role="button" aria-pressed="true">Call Me</a>
+    <a href="https://github.com/taylorpaddock" class="btn btn-outline-danger btn-lg active col-md-auto m-2" target="_blank" role="button" aria-pressed="true">My GitHub</a>
+    <a href="./assets/images/Taylor-Paddock-Resume.pdf" class="btn btn-outline-primary btn-lg active col-md-auto m-2" target="_blank" role="button" aria-pressed="true">Resume</a>
+  </div>
     <!-- Work Section -->
-    <div id="work">
-      <h2 id="title" >Work</h2>
-      <div class="projects">
-        <a href="https://github.com/taylorpaddock/coderefractor-week1" target="_blank" >
-          <section class="card-one" role="image" aria-label="cloudy sky">
-            <p>Code Refractor</p>
-          </section>
-        </a>
-        <a href="https://github.com/taylorpaddock/passwordgenerator" target="_blank" >
-          <section class="card-two" role="image" aria-label="starry sky">
-            <p>Password Generator</p>
-          </section>
-        </a>
-        <a href="https://github.com/taylorpaddock/codequiz" target="_blank" >
-          <section class="card-three" role="image" aria-label="ocean wave">
-            <p>Code Quiz</p>
-          </section>
-        </a>
-        <a href="https://github.com/taylorpaddock/workdayplanner" target="_blank" >
-          <section class="card-four" role="image" aria-label="sunset">
-            <p>Work Day Planner</p>
-          </section>
-        </a>
-        <a href="https://github.com/taylorpaddock/weatherdashboard" target="_blank" >
-          <section class="card-four" role="image" aria-label="sunset">
-            <p>Weather Dashboard</p>
-          </section>
-        </a>
-        <a href="https://github.com/ChonaC/BootCamp-Project-One" target="_blank" >
-          <section class="card-four" role="image" aria-label="sunset">
-            <p>NFL Dashboard</p>
-          </section>
-        </a>
+  <div id="work" class="row m-3">
+    <h2 class="col-12 m-2" id="title">Work</h2>
+    <div class="card col-md-auto m-3" style="width: 20rem;">
+      <img src="./assets/images/login-screen-musictrivia.jpeg" class="card-img-top" alt="login screen for music trivia application">
+      <div class="card-body">
+        <h5 class="card-title">Music Trivia 2.0</h5>
+        <p class="card-text">A fun quiz to test your lyric and music knowledge.</p>
+      </div>
+      <div class="card-body">
+        <a href="https://protected-falls-91774.herokuapp.com/login" target="_blank" class="card-link">Deployed App</a>
+        <a href="https://github.com/ChonaC/Project-2-MUSICTRIVIA" target="_blank" class="card-link">GitHub Repo</a>
       </div>
     </div>
-    <!-- Contact Me Section-->
-    <div id="contact-me">
-      <h2 id="title">Contact Me</h2>
-      <ul>
-        <li><a href="mailto:tayjeep@comcast.net">email: tayjeep@comcast.net</a></li>
-        <li><a href="tel:2069092221"> call me: 206.909.2221</a></li>
-        <li><a href="https://github.com/taylorpaddock" target="_blank">My GitHub</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
+    <div class="card col-md-auto m-3" style="width: 20rem;">
+      <img src="./assets/images/nfl-dashboard.png" class="card-img-top" alt="login screen for music trivia application">
+      <div class="card-body">
+        <h5 class="card-title">NFL Dashboard</h5>
+        <p class="card-text">See all the games at a glance by week for the 2021-22 season.</p>
+      </div>
+      <div class="card-body">
+        <a href="https://chonac.github.io/BootCamp-Project-One/" target="_blank" class="card-link">Deployed App</a>
+        <a href="https://github.com/ChonaC/BootCamp-Project-One" target="_blank" class="card-link">GitHub Repo</a>
+      </div>
     </div>
-  </section>
-  
+    <div class="card col-md-auto m-3" style="width: 20rem;">
+      <img src="./assets/images/notetaker-homescreen.jpeg" class="card-img-top" alt="login screen for music trivia application">
+      <div class="card-body">
+        <h5 class="card-title">Note Taker</h5>
+        <p class="card-text">Take down all your notes and easily access them in one place. Technologies used: express, inquirer, uuid & javascript.</p>
+      </div>
+      <div class="card-body">
+        <a href="https://note-take2021.herokuapp.com/" target="_blank" class="card-link">Deployed App</a>
+        <a href="https://github.com/taylorpaddock/note-taker" target="_blank" class="card-link">GitHub Repo</a>
+      </div>
+    </div>
+    <div class="card col-md-auto m-3" style="width: 20rem;">
+      <img src="./assets/images/readmegenerator.gif" class="card-img-top" alt="login screen for music trivia application">
+      <div class="card-body">
+        <h5 class="card-title">README Generator</h5>
+        <p class="card-text">Create a README document in seconds by answering simple questions. This will run in your intergrated terminal. Technologies used inquirer and javascript.</p>
+      </div>
+      <div class="card-body">
+        <a href="https://github.com/taylorpaddock/readmegenerator" target="_blank" class="card-link">GitHub Repo</a>
+      </div>
+    </div>
+  </div>
+  <!--Footer-->  
   <footer>
-    <h3>Created with Hard Work and Love</h3>
+    <div class="card-footer text-muted text-center light-pink">
+      <h6 class="green">Created with Hard Work and Love</h6>
+    </div>
   </footer>
-
 </body>
 </html>
