@@ -15,7 +15,7 @@ Website can be accessed through my Gitlab profile via index.html.
 Website can be viewed on desktop and meets all standards for accessibility.
 link: https://taylorpaddock.github.io/portfolio/
 
-![website screenshot](./assets/images/taylors-portfolio.jpg)
+![website screenshot](./assets/images/portfolio-screenshot.png)
 
 ## Credits
 
